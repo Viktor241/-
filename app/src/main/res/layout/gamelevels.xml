@@ -1,0 +1,1582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/container1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/container2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            //Кнопка Назад
+            <LinearLayout
+                android:id="@+id/container3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_stroke_black95_press_white"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/previous"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black95"
+                    android:textSize="20dp" />
+
+
+            </LinearLayout>
+
+            //Игровое поле
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:textStyle="italic"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    ></TextView>
+
+                //Верхнее игровое поле
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/kontur_of_field"
+                    android:orientation="horizontal">
+
+                    //Столбец с цифрами 1
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="15dp"
+                            android:background="@color/background_cell"/>
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="15dp"
+                            android:background="@color/background_cell"/>
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="15dp"
+                            android:background="@color/background_cell"/>
+                    </LinearLayout>
+
+                    //Столбец с цифрами 2
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="15dp"
+                            android:background="@color/background_cell"/>
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="15dp"
+                            android:background="@color/background_cell"/>
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="15dp"
+                            android:background="@color/background_cell"/>
+                    </LinearLayout>
+
+                    //Столбец с цифрами 3
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="15dp"
+                            android:background="@color/background_cell"/>
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="15dp"
+                            android:background="@color/background_cell"/>
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="15dp"
+                            android:background="@color/background_cell"/>
+                    </LinearLayout>
+
+                    //Столбец с цифрами 4
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="15dp"
+                            android:background="@color/background_cell"/>
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="15dp"
+                            android:background="@color/background_cell"/>
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="15dp"
+                            android:background="@color/background_cell"/>
+                    </LinearLayout>
+
+                    //Столбец с цифрами 5
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="15dp"
+                            android:background="@color/background_cell"/>
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="15dp"
+                            android:background="@color/background_cell"/>
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="15dp"
+                            android:background="@color/background_cell"/>
+                    </LinearLayout>
+
+                    //Столбец с цифрами 6
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="15dp"
+                            android:background="@color/background_cell"/>
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="15dp"
+                            android:background="@color/background_cell"/>
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="15dp"
+                            android:background="@color/background_cell"/>
+                    </LinearLayout>
+
+                    //Столбец с цифрами 7
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="15dp"
+                            android:background="@color/background_cell"/>
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="15dp"
+                            android:background="@color/background_cell"/>
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="15dp"
+                            android:background="@color/background_cell"/>
+                    </LinearLayout>
+
+                    //Столбец с цифрами 8
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="15dp"
+                            android:background="@color/background_cell"/>
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="15dp"
+                            android:background="@color/background_cell"/>
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="15dp"
+                            android:background="@color/background_cell"/>
+                    </LinearLayout>
+
+                    //Столбец с цифрами 9
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="15dp"
+                            android:background="@color/background_cell"/>
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="15dp"
+                            android:background="@color/background_cell"/>
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="15dp"
+                            android:background="@color/background_cell"/>
+                    </LinearLayout>
+
+                    //Столбец с цифрами 10
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="15dp"
+                            android:background="@color/background_cell"/>
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="15dp"
+                            android:background="@color/background_cell"/>
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="15dp"
+                            android:background="@color/background_cell"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    //Левое игровое поле
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/kontur_of_field"
+                        android:orientation="vertical">
+
+
+                        //Строчка с цифрами 1
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp">
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+
+
+                        </LinearLayout>
+
+                        //Строчка с цифрами 2
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+                        </LinearLayout>
+
+                        //Строчка с цифрами 3
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+                        </LinearLayout>
+
+                        //Строчка с цифрами 4
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+                        </LinearLayout>
+
+                        //Строчка с цифрами 5
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+                        </LinearLayout>
+
+                        //Строчка с цифрами 6
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+                        </LinearLayout>
+
+                        //Строчка с цифрами 7
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+                        </LinearLayout>
+
+                        //Строчка с цифрами 8
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+                        </LinearLayout>
+
+                        //Строчка с цифрами 9
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+                        </LinearLayout>
+
+                        //Строчка с цифрами 10
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:background="@color/background_cell"/>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    //Центральное игровое поле
+
+                    <LinearLayout
+                        android:id="@+id/field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/kontur_of_field"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        // 1 линия
+                        <LinearLayout
+                            android:id="@+id/line1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/cell_before" />
+
+                            <ImageView
+                                android:id="@+id/imageView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+                        </LinearLayout>
+
+                        // 2 линия
+                        <LinearLayout
+                            android:id="@+id/line2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView19"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+                        </LinearLayout>
+
+                        // 3 линия
+                        <LinearLayout
+                            android:id="@+id/line3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView22"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView24"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView25"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView26"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView27"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView28"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView29"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView30"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+                        </LinearLayout>
+
+                        // 4 линия
+                        <LinearLayout
+                            android:id="@+id/line4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView31"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView32"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView34"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView35"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView36"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView37"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView38"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView39"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView40"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+                        </LinearLayout>
+
+                        // 5 линия
+                        <LinearLayout
+                            android:id="@+id/line5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView41"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView42"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView43"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView44"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView45"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView46"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView47"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView48"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView49"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView50"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+                        </LinearLayout>
+
+                        // 6 линия
+                        <LinearLayout
+                            android:id="@+id/line6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView51"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView52"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView53"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView54"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView55"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView56"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView57"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView58"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView59"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView60"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+                        </LinearLayout>
+
+                        // 7 линия
+                        <LinearLayout
+                            android:id="@+id/line7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView61"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView62"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView63"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView64"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView65"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView66"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView67"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView68"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView69"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView70"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+                        </LinearLayout>
+
+                        // 8 линия
+                        <LinearLayout
+                            android:id="@+id/line8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView71"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView72"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView73"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView74"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView75"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView76"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView77"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView78"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView79"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView80"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+                        </LinearLayout>
+
+                        // 9 линия
+                        <LinearLayout
+                            android:id="@+id/line9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView81"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView82"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView83"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView84"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView85"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView86"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView87"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView88"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView89"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView90"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+                        </LinearLayout>
+
+                        // 10 линия
+                        <LinearLayout
+                            android:id="@+id/line10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView91"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView92"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView93"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView94"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView95"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView96"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView97"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView98"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView99"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+
+                            <ImageView
+                                android:id="@+id/imageView100"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/white_cell" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

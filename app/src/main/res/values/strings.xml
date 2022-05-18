@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Нонограмма</string>
+    <string name="action_settings">Настройки</string>
+    <string name="action_about">О программе...</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Главная страница</string>
+    <string name="second_fragment_label">Страница игры</string>
+    <string name="next">Начать</string>
+    <string name="settings">Настройки</string>
+    <string name="previous">Назад</string>
+    <string name="aboutus">О создателях</string>
+    <string name="level">Уровень:</string>
+
+    <string name="hello_first_fragment">Нонограмма</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
